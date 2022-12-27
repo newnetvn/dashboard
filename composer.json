@@ -1,0 +1,45 @@
+{
+    "name": "newnet/dashboard",
+    "description": "Newnet Dashboard",
+    "keywords": [
+        "newnet"
+    ],
+    "homepage": "https://newnet.vn",
+    "support" : {
+        "email" : "support@newnet.vn"
+    },
+    "authors": [
+        {
+            "name": "Kim Nguyen",
+            "email": "kimtrien@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "newnet/core": "^2.0",
+        "arrilot/laravel-widgets": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Newnet\\Dashboard\\": "/src"
+        },
+        "files": [
+            "helpers/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Newnet\\Dashboard\\DashboardServiceProvider"
+            ],
+            "aliases": {
+                "Dashboard": "Newnet\\Dashboard\\Facades\\Dashboard"
+            }
+        },
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
