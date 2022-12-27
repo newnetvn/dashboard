@@ -1,6 +1,7 @@
 {
     "name": "newnet/dashboard",
     "description": "Newnet Dashboard",
+    "license": "MIT",
     "keywords": [
         "newnet"
     ],
@@ -10,13 +11,12 @@
     },
     "authors": [
         {
-            "name": "Kim Nguyen",
-            "email": "kimtrien@gmail.com"
+            "name": "Newnet",
+            "email": "support@newnet.vn"
         }
     ],
     "type": "library",
     "require": {
-        "newnet/core": "^2.0",
         "arrilot/laravel-widgets": "^3.0"
     },
     "autoload": {
@@ -35,9 +35,6 @@
             "aliases": {
                 "Dashboard": "Newnet\\Dashboard\\Facades\\Dashboard"
             }
-        },
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
         }
     },
     "minimum-stability": "dev",
